@@ -82,7 +82,18 @@ public class WriteToFile
 		for(int val : list)
 		{	total += val;
 		}
-		return total;
+		return total; 
+            webhSystem.out.println("Original List");
+		printList(list);
+		System.out.println("Calling addOne");
+		addOne(list);
+		System.out.println("List after call to addOne");
+		printList(list);
+		System.out.println("Calling addOneError");
+		addOneError(list);
+		System.out.println("List after call to addOneError. Note elements of list did not change.");
+		printList(list)oohs#
+          
 	}
 
 		catch(IOException e)
